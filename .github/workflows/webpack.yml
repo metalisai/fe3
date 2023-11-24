@@ -35,6 +35,7 @@ jobs:
 
     - name: Build
       run: |
+        npm install webpack webpack-cli
         npm install
         npx webpack
     - name: Upload artifact
