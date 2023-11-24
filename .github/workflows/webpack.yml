@@ -35,7 +35,7 @@ jobs:
 
     - name: Build
       run: |
-        npm install --yes
+        npm install -D webpack-cli --yes
         npx webpack
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
