@@ -33,4 +33,7 @@ module.exports = {
     compress: true,
     port: 8080,
   },
+  output: {
+    path: path.resolve(__dirname, '.out'),
+  },
 };
