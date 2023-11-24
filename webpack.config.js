@@ -34,6 +34,6 @@ module.exports = {
     port: 8080,
   },
   output: {
-    path: path.resolve(__dirname, '.out'),
+    path: path.resolve(__dirname, 'out'),
   },
 };
