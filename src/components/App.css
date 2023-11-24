@@ -1,0 +1,64 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.mainContainer h1 {
+  font-size: 2rem;
+  margin: 2rem 0;
+  color: white;
+}
+
+.bgPattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-image: url("../../public/pattern-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.bg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.myMapDiv {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  height: 60%;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.myMapDiv {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  height: 60%;
+  width: 100%;
+  flex-grow: 1;
+  z-index: -10;
+}
+
+@media (max-width: 768px) {
+  .mainContainer h1 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .bgPattern {
+    background-image: url("../../public/pattern-bg-mobile.png");
+  }
+}
+

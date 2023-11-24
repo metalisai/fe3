@@ -1,0 +1,71 @@
+.infoContainer {
+  margin-top: 2em;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  background-color: white;
+  border-radius: 1em;
+  padding: 2em;
+  min-width: 50%;
+  max-width: 80%;
+  min-width: 50%;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  gap: 2em;
+}
+
+.info {
+  flex: 1 1 20%;
+  border-right: 1px solid #ddd;
+  padding-right: 2em;
+}
+
+.info:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.info h2 {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  margin: 0;
+  color: #888;
+  margin-bottom: 0.5em;
+}
+
+.info p {
+  font-size: 1.2em;
+  margin: 0;
+  color: #333;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .mainContainer h1 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .bgPattern {
+    background-image: url("../../public/pattern-bg-mobile.png");
+  }
+
+  .infoContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    min-width: 300px;
+    box-sizing: border-box;
+    gap: 1em;
+  }
+
+  .info {
+    text-align: center;
+    border-right: none;
+  }
+  
+  .info p {
+    font-size: 1rem;
+  }
+}
