@@ -18,7 +18,7 @@ export default function IpBar() {
   const handleSearch = (e) => {
     e.preventDefault();
 
-    const ip = document.getElementById("ipAddress").value;
+    const ip = document.getElementById("ipAddressInput").value;
     if (!isValidIP(ip)) {
       alert("Invalid IP Address");
       return;
@@ -50,7 +50,7 @@ export default function IpBar() {
 
   return (
     <div className="searchBar">
-      <input className="searchInput" id="ipAddress" type="text" placeholder="Search for any IP address or domain" />
+      <input className="searchInput" id="ipAddressInput" type="text" placeholder="Search for any IP address or domain" />
       <button className="searchButton" onClick={handleSearch}>
         <img src={IconArrow} alt="arrow" />
       </button>
